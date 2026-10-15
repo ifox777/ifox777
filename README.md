@@ -14,3 +14,18 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 
+## Duration utility
+
+`duration_utils.to_minutes(seconds)` converts a non-negative integer number of
+seconds to whole minutes, rounding up when there are leftover seconds. For
+example, `to_minutes(0)` returns `0`, `to_minutes(59)` returns `1`, and
+`to_minutes(61)` returns `2`. Booleans and other non-integer inputs raise
+`TypeError`; negative integers raise `ValueError`.
+
+```python
+from duration_utils import to_minutes
+
+print(to_minutes(61))  # 2
+```
+
+Run the tests with `python -B -m unittest -v`.
