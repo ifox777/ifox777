@@ -14,3 +14,14 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 
+### Batch utility
+
+Use `chunked` to split a list into consecutive batches:
+
+```python
+from batch_utils import chunked
+
+chunked([1, 2, 3, 4, 5], 2)  # [[1, 2], [3, 4], [5]]
+```
+
+Run the tests with `python -B -m unittest -v`.
