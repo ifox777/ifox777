@@ -14,3 +14,15 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 
+### Compress integer ranges
+
+`range_utils.compress_ranges` sorts and deduplicates a list of integers, then
+returns inclusive ranges for consecutive values:
+
+```python
+from range_utils import compress_ranges
+
+print(compress_ranges([5, 1, 2, 2, 4, 9]))  # [(1, 2), (4, 5), (9, 9)]
+```
+
+Run the tests with `python -B -m unittest -v`.
