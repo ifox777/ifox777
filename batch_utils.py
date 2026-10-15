@@ -8,5 +8,4 @@ def chunked(values, size):
         raise TypeError("size must be an int")
     if size <= 0:
         raise ValueError("size must be positive")
-    end = len(values) - len(values) % size
-    return [values[index:index + size] for index in range(0, end, size)]
+    return [values[index:index + size] for index in range(0, len(values), size)]
