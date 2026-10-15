@@ -14,3 +14,10 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 
+## Interval utilities
+
+`interval_utils.merge_intervals(intervals, max_gap=0)` sorts integer intervals and merges overlapping or nearby intervals. Run the tests with:
+
+```sh
+python -B -m unittest -v
+```
